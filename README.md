@@ -1,9 +1,6 @@
 # Employee SQL Database
 
-![sql.png](sql.png)
-
-Design the tables to hold employee data in the CSVs, import the CSVs into a SQL database, and answer questions about the data. In other words, you will perform:
-
+Designed the tables to hold employee data in the CSVs, imported the CSVs into a SQL database, and answered questions about the data. 
 
 #### Data Modeling
 
