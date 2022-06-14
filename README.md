@@ -119,11 +119,13 @@ Investigated the following:
     b. Used "COUNT" function to count last names.
     c. Created alias "Last Name Count" for the new column name.
     d. Used "GROUP BY" clause to group results by last name.
-    e. Query listed below.
+    e. Used "ORDER BY" clause to sort last name counts in descending order.
+    f. Query listed below.
     
     SELECT last_name, COUNT(last_name) AS "Last Name Count"
     FROM ee_combined
-    GROUP BY last_name;
+    GROUP BY last_name
+    ORDER BY "Last Name Count" DESC;
 
 ## Import SQL database into Python (Bonus Analysis file)
 
