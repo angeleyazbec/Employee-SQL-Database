@@ -40,6 +40,7 @@ FROM employees
 JOIN dept_combined ON
 employees.emp_no=dept_combined.emp_no;
 
+![image](https://user-images.githubusercontent.com/90559756/163274103-751187c3-4ef6-4e43-879d-cbfaa54e67d0.png)
 
 Investigated the following:
 
@@ -116,15 +117,13 @@ Investigated the following:
 8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
     a. Selected requested information from ee_combined view.
     b. Used "COUNT" function to count last names.
-    c. Used "GROUP BY" clause to group results by last name.
-    d. Query listed below.
+    c. Created alias "Last Name Count" for the new column name.
+    d. Used "GROUP BY" clause to group results by last name.
+    e. Query listed below.
     
     SELECT last_name, COUNT(last_name) AS "Last Name Count"
     FROM ee_combined
     GROUP BY last_name;
-
-![image](https://user-images.githubusercontent.com/90559756/163274103-751187c3-4ef6-4e43-879d-cbfaa54e67d0.png)
-
 
 ## Import SQL database into Python (Bonus Analysis file)
 
