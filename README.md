@@ -18,8 +18,7 @@ Specifying data types, primary keys, foreign keys, and other constraints. Loadin
 
 Created the following views for analysis:
 
---Creating a view which combines all department information together with emp_no
---These data frequently co-occur in HR-related datasets
+--Creating a view which combines all department information together with emp_no. These data frequently co-occur in HR-related datasets.
 CREATE VIEW dept_combined AS
 SELECT departments.dept_name,
 departments.dept_no,
@@ -28,8 +27,7 @@ FROM dept_emp
 JOIN departments ON
 dept_emp.dept_no=departments.dept_no;
 
---Creating a view which combines dept_combined to employee names and numbers
---Used the view below in multiple queries
+--Creating a view which combines dept_combined to employee names and numbers. Used the view below in multiple queries.
 CREATE VIEW ee_combined AS
 SELECT employees.emp_no,
 employees.last_name,
